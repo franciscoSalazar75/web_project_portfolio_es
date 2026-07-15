@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Archivo Black"; /* El nombre con el que llamarás a la fuente después */
+  src: url("../fonts/ArchivoBlack-Regular.woff2") format("woff2"); /* Ruta relativa desde tu CSS hacia la carpeta fonts */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans"; /* El nombre con el que llamarás a la fuente después */
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"); /* Ruta relativa desde tu CSS hacia la carpeta fonts */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans"; /* El nombre con el que llamarás a la fuente después */
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"); /* Ruta relativa desde tu CSS hacia la carpeta fonts */
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  background-color: #111111;
+}
+
+.header-content {
+  max-width: 793px;
+}
+
+.header-varios {
+  margin-left: 120px;
+  margin-right: 527px;
+  margin-top: 89px;
+}
+
+.header-name {
+  font-family: "Archivo Black", sans-serif;
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: 400;
+}
+
+.header-perfil {
+  margin-top: 19px;
+  font-family: "Open Sans" sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.header-description {
+  margin-top: 30px;
+  font-family: "Open Sans" sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header-list {
+  list-style-type: none;
+  margin-top: 30px;
+  font-family: "Open Sans" sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.header-foto {
+  width: 387px;
+  height: 500;
+  margin-top: 40px;
+  margin-left: 933px;
+  margin-right: 120px;
+}
