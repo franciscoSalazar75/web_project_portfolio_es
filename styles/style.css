@@ -23,7 +23,7 @@ body {
   max-width: 1440px;
   background-color: #111111;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 0;
 }
 
 header {
@@ -38,7 +38,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 10 px;
+  padding: 0 10px;
 }
 
 .header-varios {
@@ -52,6 +52,10 @@ header {
   font-weight: 400;
   line-height: 1.1;
   margin: 0 0 19px 0;
+}
+
+.responsive-br {
+  display: none;
 }
 
 .header-perfil {
@@ -94,11 +98,178 @@ header {
   height: 500px;
 }
 
-@media (max-width: 1023px) {
+.hh {
+  margin-top: 110px;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 120px;
+  box-sizing: border-box;
+}
+
+.hh-name {
+  font-family: "Archivo Black", sans-serif;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0 0 50px 0;
+}
+
+.hh-elementos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hh-elementos_size1 {
+  width: 50px;
+  height: 57px;
+}
+.hh-elementos_size2 {
+  width: 50px;
+  height: 50px;
+}
+
+.proy {
+  margin-top: 100px;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 120px;
+  box-sizing: border-box;
+}
+.proy-name {
+  display: flex;
+  font-family: "Archivo Black", sans-serif;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0 0 50px 0;
+}
+
+.proy-cuadros {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: stretch;
+}
+
+.estandar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 590px;
+  width: 100%;
+}
+
+.imagenes {
+  position: relative;
+  width: 100%;
+  max-width: 590px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.fondo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.logo1 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+  margin-top: 0;
+  width: auto;
+  height: 40px;
+}
+
+.logo2 {
+  position: absolute;
+  bottom: 20px;
+  left: 80px;
+  z-index: 10;
+  width: auto;
+  height: 40px;
+}
+
+.proy-titulo {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.proy-parrafo {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.proy-logoslife {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+.footer-titulo {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 0;
+  font-family: "Archivo Black", sans-serif;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.footer-email {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #6d6dff;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.footer-redes {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 1024px) {
   body {
     width: 100%;
     overflow-x: hidden;
-    padding: 0 30px;
+    padding: 0 40px;
   }
 
   .header-content {
@@ -109,6 +280,49 @@ header {
     width: 387px;
     height: 500px;
   }
+
+  .hh {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+
+  .hh-name {
+    font-size: 40px;
+    margin: 0 0 30px 0;
+  }
+
+  .hh-elementos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .proy {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+  .proy-name {
+    font-size: 40px;
+    margin: 0 0 30px 0;
+  }
+
+  .proy-cuadros {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .proy-cuadros_det {
+  }
 }
 
 @media (max-width: 768px) {
@@ -116,16 +330,16 @@ header {
     width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
-    padding: 0 30px;
+    padding: 0 40px;
   }
 
   .header-content {
     max-width: 100%;
-    gap: 40px; /* Asegura una separación sana entre texto y foto */
+    gap: 40px;
   }
 
   .header-name {
-    font-size: 42px; /* Reducimos un poco el tamaño de la letra */
+    font-size: 42px;
   }
 
   .header-description {
@@ -135,6 +349,60 @@ header {
     width: 216px;
     height: 280px;
   }
+
+  .hh {
+    margin-top: 80px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  .hh-name {
+    font-size: 30px;
+    margin: 0 0 20px 0;
+  }
+
+  .hh-elementos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .proy {
+    margin-top: 80px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+  .proy-name {
+    font-size: 30px;
+    margin: 0 0 20px 0;
+  }
+
+  .proy-cuadros {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .proy-cuadros_det {
+  }
+
+  .estandar {
+    max-width: 100%;
+  }
+
+  .imagenes {
+    max-width: 100%;
+  }
 }
 
 /* Para dispositivos móviles (Menos de 320px) */
@@ -143,37 +411,113 @@ header {
     width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
-    padding: 0 30px;
+    padding: 0 16px;
   }
   header {
-    padding-top: 40px; /* Menos espacio arriba en móviles */
+    padding-top: 30px; /* Menos espacio arriba en móviles */
   }
 
   .header-content {
+    display: flex;
     flex-direction: column-reverse; /* Voltea el orden: la foto arriba y el texto abajo */
     align-items: center;
     text-align: center; /* Centramos el texto para mejor lectura en móvil */
-    gap: 30px;
+    padding: 0;
+    gap: 24px;
   }
 
   .header-varios {
+    width: 100;
     max-width: 100%; /* tomar todo el ancho disponible */
   }
 
   .header-name {
     font-size: 32px; /* Letra más adecuada para pantallas pequeñas */
+    line-height: 1.2;
+  }
+
+  .header-perfil {
+    font-size: 15px;
+    margin-bottom: 20px;
   }
 
   .header-description {
     font-size: 14px;
+    line-height: 1.5;
+    text-align: justify; /* O center, según tu Figma */
   }
+
   .header-list {
-    justify-content: center; /* Centra los botones/enlaces */
-    flex-wrap: wrap; /* Si no caben en una línea, se acomodan abajo */
-    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    font-size: 15px;
   }
+
   .header-foto_img {
-    width: 280px;
-    height: 280px;
+    width: 100%; /* Se adapta limpiamente al espacio disponible */
+    max-width: 240px; /* Evita que crezca desproporcionadamente */
+    height: auto; /* Mantiene el aspecto original sin deformar la foto */
+    object-fit: cover;
+  }
+
+  .hh {
+    margin-top: 60px;
+    width: 100%;
+    padding: 40px 0 20px 0;
+    box-sizing: border-box;
+  }
+
+  .responsive-br {
+    display: block;
+  }
+  .hh-name {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .hh-elementos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+
+  .hh-elementos_size1 {
+    width: 30px;
+    height: 34.2px;
+  }
+  .hh-elementos_size2 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .proy {
+    margin-top: 60px;
+    width: 100%;
+    padding: 40px 0 20px 0;
+    box-sizing: border-box;
+  }
+  .proy-name {
+    flex-direction: column;
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .proy-cuadros {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .proy-cuadros_det {
+    position: relative;
   }
 }
