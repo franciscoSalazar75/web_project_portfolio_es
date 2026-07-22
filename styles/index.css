@@ -54,10 +54,6 @@ header {
   margin: 0 0 19px 0;
 }
 
-.responsive-br {
-  display: none;
-}
-
 .header-perfil {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -91,6 +87,12 @@ header {
 .header-list_li {
   border-bottom: 4px solid;
   border-image: linear-gradient(to right, #4c1a97, #6d6dff) 1;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.header-list_li:hover {
+  opacity: 0.5;
 }
 
 .header-foto_img {
@@ -223,6 +225,12 @@ header {
   justify-content: flex-start;
   gap: 20px;
   padding-top: 20px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.proy-logoslife:hover {
+  opacity: 0.5;
 }
 
 footer {
@@ -254,6 +262,12 @@ footer {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.footer-email:hover {
+  opacity: 0.5;
 }
 
 .footer-redes {
@@ -263,6 +277,12 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.footer-redes:hover {
+  opacity: 0.5;
 }
 
 @media (max-width: 1024px) {
@@ -470,10 +490,8 @@ footer {
     box-sizing: border-box;
   }
 
-  .responsive-br {
-    display: block;
-  }
   .hh-name {
+    flex-direction: column;
     font-size: 24px;
     text-align: left;
     margin-bottom: 30px;
